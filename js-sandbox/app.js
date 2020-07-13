@@ -1,15 +1,8 @@
-document.querySelector('.clear-tasks').addEventListener('click', onClick);
+let contestant = 0;
+let dogs = 0;
 
-function onClick(e){
-  // console.log('Clicked');
-
-  let val;
-  val = e;
-
-  val = e.target;
-  val = e.target.id;
-  val = e.target.className;
-
-
-  console.log(val);
+for (contestant = 0; contestant < 27; contestant++) {
+  dogs = contestant + (contestant - 1);
+  document.write(`Contestant ${contestant} ate ${dogs} hotdogs.`);
+  document.write("\n");
 }
